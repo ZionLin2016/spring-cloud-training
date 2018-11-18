@@ -19,6 +19,8 @@
     <modules>
         <module>config</module>
         <module>registry</module>
+        <module>monitor</module>
+        <module>gateway</module>
     </modules>
 
     <properties>

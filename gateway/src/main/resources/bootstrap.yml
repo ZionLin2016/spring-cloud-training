@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      uri: http://config:8888
+      fail-fast: true
+      username: ${security.user.name}
+      password: ${security.user.password}
+      retry:
+        initial-interval: 2000
+        max-interval: 10000
+        multiplier: 2
+        max-attempts: 10
+
+
+security:
+  user:
+    name: gateway
+    password: 123456
