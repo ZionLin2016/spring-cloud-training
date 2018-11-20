@@ -21,6 +21,7 @@
         <module>registry</module>
         <module>monitor</module>
         <module>gateway</module>
+        <module>service-auth</module>
     </modules>
 
     <properties>
