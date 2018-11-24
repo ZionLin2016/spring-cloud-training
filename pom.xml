@@ -22,6 +22,8 @@
         <module>monitor</module>
         <module>gateway</module>
         <module>service-auth</module>
+        <module>service-work1</module>
+        <module>service-work2</module>
         <module>zipkin</module>
     </modules>
 
