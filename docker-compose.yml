@@ -1,0 +1,35 @@
+version: '2'
+services:
+  rabbitmq:
+      image: rabbitmq:management
+      restart: always
+      ports:
+        - 15673:15672
+  registry:
+    image: spring-cloud-training/registry
+    ports:
+      - "8761:8761"
+  config:
+    image: spring-cloud-training/config
+    ports:
+      - "8888:8888"
+  monitor:
+    image: spring-cloud-training/monitor
+    ports:
+      - "8040:8040"
+  zipkin:
+    image: spring-cloud-training/zipkin
+    ports:
+      - "9411:9411"
+  gateway:
+    image: spring-cloud-training/gateway
+    ports:
+      - "8060:8060"
+  service-auth:
+    image: spring-cloud-training/service-auth
+    ports:
+      - "5000:5000"
+  service-work1:
+    image: spring-cloud-training/service-work1
+  service-work2:
+    image: spring-cloud-training/service-work2
